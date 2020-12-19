@@ -36,7 +36,7 @@ export SEP2="]"
 . "$DIR/bar-functions/dwm_networkmanager.sh"
 . "$DIR/bar-functions/dwm_keyboard.sh"
 . "$DIR/bar-functions/dwm_date.sh"
-. "$DIR/bar-functions/dwm_loadavg.sh"
+# . "$DIR/bar-functions/dwm_loadavg.sh"
 
 # Update dwm status bar every second
 while true
@@ -58,7 +58,7 @@ do
     dispstr="$dispstr$(dwm_networkmanager)"
     dispstr="$dispstr$(dwm_keyboard)"
     dispstr="$dispstr$(dwm_date)"
-    dispstr="$dispstr$(dwm_loadavg)"
+#     dispstr="$dispstr$(dwm_loadavg)"
 
     xsetroot -name "$dispstr"
     sleep 1
