@@ -9,7 +9,8 @@ dwm_resources () {
     MEMUSED=$(free -h | awk '(NR == 2) {print $3}')
     MEMTOT=$(free -h |awk '(NR == 2) {print $2}')
     # CPU temperature
-    CPU=$(sysctl -n hw.sensors.cpu0.temp0 | cut -d. -f1)
+    # CPU=$(sysctl -n hw.sensors.cpu0.temp0 | cut -d. -f1)
+	CPU=$(sensors | grep 'Package id 0:\|Tdie' | grep ':[ ]*+[0-9]*.[0-9]*°C' -o | grep '+[0-9]*.[0-9]*°C' -o)
     # Used and total storage in /home (rounded to 1024B)
     STOUSED=$(df -h | grep '/home$' | awk '{print $3}')
     STOTOT=$(df -h | grep '/home$' | awk '{print $2}')

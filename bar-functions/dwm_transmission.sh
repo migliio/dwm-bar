@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# A dwm_bar function to show the status of a torrent woth transmission-remote
+# A dwm_bar function to show the status of a torrent with transmission-remote
 # Joe Standring <git@joestandring.com>
 # GNU GPLv3
 
