@@ -42,20 +42,20 @@ export SEP2="]"
 while true
 do
 
-    # Append results of each func one by one to a string
+# Append results of each func one by one to a string
     dispstr=""
     dispstr="$dispstr$(dwm_countdown)"
     dispstr="$dispstr$(dwm_alarm)"
 #    dispstr="$dispstr$(dwm_transmission)"
     dispstr="$dispstr$(dwm_spotify)"
-    dispstr="$dispstr$(dwm_resources)"
+	dispstr="$dispstr$(dwm_resources)"
     dispstr="$dispstr$(dwm_battery)"
     dispstr="$dispstr$(dwm_mail)"
 #     dispstr="$dispstr$(dwm_backlight)"
     dispstr="$dispstr$(dwm_alsa)"
     dispstr="$dispstr$(dwm_weather)"
-#    dispstr="$dispstr$(dwm_vpn)"
-#    dispstr="$dispstr$(dwm_networkmanager)"
+#     dispstr="$dispstr$(dwm_vpn)"
+#     dispstr="$dispstr$(dwm_networkmanager)"
     dispstr="$dispstr$(dwm_keyboard)"
     dispstr="$dispstr$(dwm_date)"
 #     dispstr="$dispstr$(dwm_loadavg)"
